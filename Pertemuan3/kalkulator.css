@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f39a9a;
+    font-family: 'Poppins';
+    color: white;
+    outline: none;
+}
+
+h1{
+    margin-top: 10px;
+    text-align: center;
+    text-shadow: 5px 5px 5px #df3232,
+                 5px 5px 12px rgb(0, 0, 0,.16); ;
+}
+.container{
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.kalkulator{
+    background-color: #ee2b2b;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 12px #ee2b2b,
+                      5px 5px 20px rgb(0, 0, 0,.35);
+    display: grid;
+    grid-template-columns: repeat(4,65px);
+}
+
+input{
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: ##f39a9a;
+    grid-column: span 4; /* col-span input menjadi 4 agar jadi 1 baris terpisah */
+    height: 45px;
+    width: 230px;
+    box-shadow: inset 5px 5px 15px #ee2b2b,
+                inset  5px  5px 15px rgb(0, 0, 0,.16);
+    border-radius: 10px;
+    border:none;
+    color: rgb(158, 158, 158);
+    font-size: 30px;
+    text-align: end;
+}
+
+::placeholder{
+    color: rgb(206, 0, 0);
+}
+
+button{
+    border: none;
+    height: 40px;
+    width: 50px;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #f79696,
+                5px 5px 12px rgb(0, 0, 0,.16);   
+    cursor: pointer;
+}
+
+button:active{
+    box-shadow: inset 5px 5px 5px #f0a3a3,
+                inset 5px 5px 12px rgb(0, 0, 0,.16);   
+    cursor: pointer;
+}
+
+.hasil{
+    width: 118px;
+}
